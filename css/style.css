@@ -47,10 +47,32 @@ body{
     margin-bottom: 20px;
 }
 
-.button a{
-    text-decoration: none;
-    font-size: 1rem;
-    color: #111;
+.button-container {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: lightgray;
+}
+#no-button {
+    position: absolute;
+    left: 120px; /* Initial position to prevent overlap */
+    transition: all 0.3s ease-in-out;
+}
+.thank-you-text {
+    font-size: 2rem;
+    color: #39c6d6;
+    display: none;
+    text-align: center;
 }
 
 @media screen and (max-width:574px){
