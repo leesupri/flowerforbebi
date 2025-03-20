@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         thankYouMessage.style.display = "block"; // Show the thank you message
         setTimeout(() => {
             window.location.href = "flower.html"; // Redirect after 10 seconds
-        }, 10000);
+        }, 3000);
     });
 
     // No button functionality
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     noButton.addEventListener("click", () => {
-        const confirmExit = confirm("Really? 😢 Can you go back to the main page?");
+        const confirmExit = confirm("Really? 😢");
         if (confirmExit) {
             window.location.href = "index.html"; // Redirect to main page
         }
